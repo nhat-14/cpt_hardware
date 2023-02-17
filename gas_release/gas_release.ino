@@ -15,5 +15,5 @@ void loop() {
    motor.write(80);  // Make servo go to 90 degrees 
    delay(100); 
    motor.write(170); 
-   delay(1/realease_rate); // wait until next release
+   delay(int(1/realease_rate)); // wait until next release
 }
