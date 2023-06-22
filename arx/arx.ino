@@ -1,12 +1,16 @@
 //------------------------------------------------------------------
-// This code peform ethanol hit detection using ARX model
-// This code is written and modified by Luong Duc Nhat form the CPT Drone 
+// arx.ino: the program peforms ethanol hit detection using ARX model
 // project of Cesar Hernandez-Reyes 
 //
-// Japan, Tokyo Institute of Technology, 2021 June.
-// 
-// Please referred authors if you reused the code.
+// __author__      = "Duc-Nhat Luong"
+// __copyright__   = "Copyright 2022, The CPT robot project"
+// __credits__     = ["Duc-Nhat Luong"]
+// __license__     = "MIT"
+// __maintainer__  = "Duc-Nhat Luong"
+// __email__       = "nhat.luongduc@gmail.com"
+// __status__      = "Production"
 //------------------------------------------------------------------
+
 #define GSL_PIN  A0   // Gas Sensor Left
 #define GSR_PIN  A1   // Gas Sensor Right
 #define LED_L  11     // LED Indicator Left
