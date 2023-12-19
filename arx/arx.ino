@@ -1,15 +1,16 @@
-//------------------------------------------------------------------
-// arx.ino: the program peforms ethanol hit detection using ARX model
-// project of Cesar Hernandez-Reyes 
-//
-// __author__      = "Duc-Nhat Luong"
-// __copyright__   = "Copyright 2022, The CPT robot project"
-// __credits__     = ["Duc-Nhat Luong"]
-// __license__     = "MIT"
-// __maintainer__  = "Duc-Nhat Luong"
-// __email__       = "nhat.luongduc@gmail.com"
-// __status__      = "Production"
-//------------------------------------------------------------------
+/**
+* @file arx.ino
+*
+* @brief the program peforms ethanol hit detection using ARX model
+* project of Cesar Hernandez-Reyes 
+*
+* @author Duc-Nhat Luong （ニャット）
+* Contact: luong.d.aa@m.titech.ac.jp
+* 
+* @copyright Copyright 2022, The Chemical Plume Tracing (CPT) Robot Project"
+* credits ["Luong Duc Nhat"]
+* license GPL
+*/
 
 #define GSL_PIN  A0   // Gas Sensor Left
 #define GSR_PIN  A1   // Gas Sensor Right
@@ -46,8 +47,8 @@ double b1 = -0.2706;
   
 void setup() {
     // put your setup code here, to run once:
-  pinMode(LED_L, OUTPUT);
-  pinMode(LED_R, OUTPUT);
+    pinMode(LED_L, OUTPUT);
+    pinMode(LED_R, OUTPUT);
     Serial.begin(9600);
 }
 
