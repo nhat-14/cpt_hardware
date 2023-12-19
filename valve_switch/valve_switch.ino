@@ -1,17 +1,17 @@
 /**
- * @file valve_switch.ino
- *
- * @brief Program to open and close the solenoid valve at regular intervals.
- * Triggered to start cyclic operation of solenoid valve.
- * Serial command: 'g' for ON, 'q' for OFF
- *
- * @author Duc-Nhat Luong （ニャット）
- * Contact: luong.d.aa@m.titech.ac.jp
- * 
- * @copyright Copyright 2021, The Chemical Plume Tracing (CPT) Robot Project"
- * credits ["Luong Duc Nhat"]
- * license GPL
- */
+* @file valve_switch.ino
+*
+* @brief Program to open and close the solenoid valve at regular intervals.
+* Triggered to start cyclic operation of solenoid valve.
+* Serial command: 'g' for ON, 'q' for OFF
+*
+* @author Duc-Nhat Luong （ニャット）
+* Contact: luong.d.aa@m.titech.ac.jp
+* 
+* @copyright Copyright 2021, The Chemical Plume Tracing (CPT) Robot Project"
+* credits ["Luong Duc Nhat"]
+* license GPL
+*/
 
 
 const int ledPin = 9;
