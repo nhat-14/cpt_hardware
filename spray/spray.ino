@@ -9,8 +9,8 @@
 
 // These constants won't change. They're used to give names to the pins used:
 const int sprayPin = 11;
-const float frequencyHz = 1; 
-const float release_rate = 0.5;
+const float frequencyHz = 0.5; 
+const float release_rate = 0.4;
 
 void setup() {
     pinMode(sprayPin, OUTPUT);

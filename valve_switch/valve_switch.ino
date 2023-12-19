@@ -1,39 +1,33 @@
 /**
- * @file alcohol_release.ino
+ * @file valve_switch.ino
  *
  * @brief Program to open and close the solenoid valve at regular intervals.
  * Triggered to start cyclic operation of solenoid valve.
- * Physical switch: Located on digital pin 12
  * Serial command: 'g' for ON, 'q' for OFF
  *
- * @author Luong Duc Nhat
+ * @author Duc-Nhat Luong （ニャット）
  * Contact: luong.d.aa@m.titech.ac.jp
  * 
  * @copyright Copyright 2021, The Chemical Plume Tracing (CPT) Robot Project"
  * credits ["Luong Duc Nhat"]
  * license GPL
- * 
- * @version    = "1.0.0"
- * maintainer  = "Luong Duc Nhat"
- * status      = "Release"
  */
 
-// void openValve();
-// void closeValve();
-// void software_reset();
 
-int period = 1000;	// ms ~ 1Hz
-int pulse_width = 200; //ms
-bool flag = false;
-char cmd = ' ';
+const int ledPin = 9;
+const int valvePin = 8;
+
+int period = 1000;		// 1000ms ~ 1Hz
+int pulse_width = 200; 	//ms
+bool releaseFlag = false;
 
 void setup() {
-  	pinMode(8, OUTPUT); 	//HIGH : Denjiben is open 
-  	pinMode(9, OUTPUT); 	//HIGH : LED bright
-	digitalWrite(8, LOW);
-    digitalWrite(9, LOW);
+  	pinMode(valvePin, OUTPUT); 	//HIGH : Solenoid Valve is open 
+  	pinMode(ledPin, OUTPUT); 	//HIGH : LED bright
+	digitalWrite(valvePin, LOW);
+    digitalWrite(ledPin, LOW);
   	
-	  Serial.begin(115200);
+	Serial.begin(115200);
   	Serial.println("Program Started");
 }
 
@@ -43,30 +37,29 @@ void loop() {
 
 		if(cmd == 'g'){
 			Serial.print("Running");
-			flag = true;
+			releaseFlag = true;
 		}
 		else if (cmd == 'q') {
 			Serial.println("Stopped");
-			flag = false;
+			releaseFlag = false;
 		}
 		else {
 			Serial.println("Wrong command");
 		}
   	}
   
-	if (flag == true) {
-		digitalWrite(8, HIGH);
+	if (releaseFlag == true) {
+		digitalWrite(valvePin, HIGH);
 		digitalWrite(9, HIGH);
 		delay(pulse_width);
 
-		digitalWrite(8, LOW);
-		digitalWrite(9, LOW);
+		digitalWrite(valvePin, LOW);
+		digitalWrite(ledPin, LOW);
 		delay(period-pulse_width);
 	}
 	else {
-		digitalWrite(8, LOW);
-		digitalWrite(9, LOW);
+		digitalWrite(valvePin, LOW);
+		digitalWrite(ledPin, LOW);
 		delay(period);
 	}
 }
-	
