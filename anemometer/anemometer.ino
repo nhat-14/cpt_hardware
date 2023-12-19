@@ -1,5 +1,5 @@
 /**
-* @file valve_switch.ino
+* @file anemometer.ino
 *
 * @brief This code demonstrate communication between Arduino and Wind sensor 
 * using software serial. Wind data is read and published to ROS 1 network
