@@ -18,13 +18,13 @@
 #endif
 
 
-
 void setup() {
     Wire.begin();
     SERIAL.begin(115200);
     scd30.initialize();
     delay(2000);
 }
+
 
 void loop() {
     float result[3] = {0};
