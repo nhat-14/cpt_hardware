@@ -11,3 +11,6 @@ Using ARX model to output the binary detection of gas presence from raw data val
 ## co2_humid
 The code establish the communication between Arduino Uno and CO2-Temperature-humid sensor using serial communication. 
 > Device URL: [SCD30](https://wiki.seeedstudio.com/Grove-CO2_Temperature_Humidity_Sensor-SCD30/)
+
+## dc_fan
+Varying DC fan speed and swing motion for recording different shape of smoke for PIV experiment.
