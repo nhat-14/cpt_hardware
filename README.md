@@ -14,3 +14,6 @@ The code establish the communication between Arduino Uno and CO2-Temperature-hum
 
 ## dc_fan
 Varying DC fan speed and swing motion for recording different shape of smoke for PIV experiment.
+
+## dynamixel_test_connect
+Test the connection of the dynamixel motor to the arduino.
