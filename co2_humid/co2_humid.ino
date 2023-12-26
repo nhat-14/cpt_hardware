@@ -1,3 +1,17 @@
+/**
+* @file co2_humid.ino
+*
+* @brief This code demonstrate communication between Arduino and 
+* C02-Temperature-Humid sensor SCD30 using software serial. 
+*
+* @author Duc-Nhat Luong （ニャット）
+* Contact: luong.d.aa@m.titech.ac.jp
+* 
+* @copyright Copyright 2021, The Chemical Plume Tracing (CPT) Robot Project"
+* credits ["Luong Duc Nhat"]
+* license GPL
+*/
+
 #include "SCD30.h"
 
 #if defined(ARDUINO_ARCH_AVR)

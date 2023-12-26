@@ -7,3 +7,7 @@ The code establish the communication between Arduino Uno and Wind sensor using s
 
 ## arx
 Using ARX model to output the binary detection of gas presence from raw data value of gas sensor. All the constants are pre-determined in this [paper](https://ieeexplore.ieee.org/abstract/document/7987788)
+
+## co2_humid
+The code establish the communication between Arduino Uno and CO2-Temperature-humid sensor using serial communication. 
+> Device URL: [SCD30](https://wiki.seeedstudio.com/Grove-CO2_Temperature_Humidity_Sensor-SCD30/)
