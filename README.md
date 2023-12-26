@@ -17,3 +17,6 @@ Varying DC fan speed and swing motion for recording different shape of smoke for
 
 ## dynamixel_test_connect
 Test the connection of the dynamixel motor to the arduino.
+
+## gas_spray
+This code is used to automated the ethanol spay action using relay module and [electric spray](https://www.monotaro.com/g/03004290/).
