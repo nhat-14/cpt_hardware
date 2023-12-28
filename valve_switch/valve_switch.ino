@@ -13,7 +13,6 @@
 * license GPL
 */
 
-
 const int ledPin = 9;
 const int valvePin = 8;
 
@@ -26,13 +25,14 @@ void setup() {
   	pinMode(ledPin, OUTPUT); 	//HIGH : LED bright
 	digitalWrite(valvePin, LOW);
     digitalWrite(ledPin, LOW);
-  	
+
 	Serial.begin(115200);
-  	Serial.println("Program Started");
+	Serial.println("Program Started");
 }
 
+
 void loop() {
- 	if (Serial.available() > 0) {
+	if (Serial.available() > 0) {
 		char cmd = Serial.read();
 
 		if(cmd == 'g'){
@@ -46,8 +46,8 @@ void loop() {
 		else {
 			Serial.println("Wrong command");
 		}
-  	}
-  
+	}
+
 	if (releaseFlag == true) {
 		digitalWrite(valvePin, HIGH);
 		digitalWrite(9, HIGH);

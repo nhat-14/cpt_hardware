@@ -10,7 +10,7 @@ Using ARX model to output the binary detection of gas presence from raw data val
 
 ## co2_humid
 The code establish the communication between Arduino Uno and CO2-Temperature-humid sensor using serial communication. 
-> Device URL: [SCD30](https://wiki.seeedstudio.com/Grove-CO2_Temperature_Humidity_Sensor-SCD30/)
+ Device URL: [SCD30](https://wiki.seeedstudio.com/Grove-CO2_Temperature_Humidity_Sensor-SCD30/)
 
 ## dc_fan
 Varying DC fan speed and swing motion for recording different shape of smoke for PIV experiment.
@@ -20,3 +20,7 @@ Test the connection of the dynamixel motor to the arduino.
 
 ## gas_spray
 This code is used to automated the ethanol spay action using relay module and [electric spray](https://www.monotaro.com/g/03004290/).
+
+## valve_switch
+Program to open and close the solenoid valve at regular intervals. Triggered to start cyclic operation of solenoid valve. 
+> Serial command: 'g' for ON, 'q' for OFF.
