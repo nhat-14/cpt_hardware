@@ -24,3 +24,6 @@ This code is used to automate the ethanol spay action using a relay module and [
 ## valve_switch
 Program to open and close the solenoid valve at regular intervals. Triggered to start cyclic operation of the solenoid valve. 
 > Serial command: 'g' for ON, 'q' for OFF.
+
+## PIV Camera HAS-L1
+The SDK of the camera used for PIV experiments. The SDK is provided by the camera producer. **Please be careful** to check the right if you want to publish this.
