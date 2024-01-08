@@ -1,4 +1,4 @@
-# arduino_hardware_ctrl
+# cpt_hardware
 Compilation of Arduino codes to control several devices such as dc fans and gas release devices serving for CPT experiments in Kurabayashi Lab in ToKyo Institute of Technology. 
 
 ## anemometer
