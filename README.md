@@ -21,6 +21,10 @@ Test the connection of the Dynamixel motor to the Arduino.
 ## gas_spray
 This code is used to automate the ethanol spay action using a relay module and [electric spray](https://www.monotaro.com/g/03004290/).
 
+## solenoid_release
+Program to open and close the solenoid valve at regular intervals. Triggered to start cyclic operation of the solenoid valve. 
+> Serial command: 'r' for ON, 'c' for OFF.
+
 ## valve_switch
 Program to open and close the solenoid valve at regular intervals. Triggered to start cyclic operation of the solenoid valve. 
 > Serial command: 'g' for ON, 'q' for OFF.
